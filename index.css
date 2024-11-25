@@ -1,0 +1,485 @@
+/* google font link */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+
+:root{
+    --orange-light:#f9efe6;
+    --orange:#ef7a54;
+    --green:#055346;
+    --light-green:#ebfffc;
+    --primary-text-color:#001c1799;
+    --white:#ffffff;
+    --secondary-text-color:#ffffff99;
+    --primary-font:"Sansita", sans-serif;
+    --secondary-font:"Lato", sans-serif;
+}
+
+*{
+    outline: none;
+}
+
+
+/* header section css */
+
+.container-fluid{
+    max-width: 1250px;
+    
+}
+
+#nav{
+    background-color: var(--orange-light);
+    top: 0;
+    z-index: 9999;
+}
+
+#email-link{
+    color: var(--orange);
+}
+
+#email-link>span{
+    font-family: var(--secondary-font);
+}
+
+#email-link:hover span{
+    text-decoration: underline;
+}
+
+/* banar section css */
+
+.banar-sec{
+    padding-top: 12rem;
+    padding-bottom: 5rem;
+
+}
+
+.span{
+    font-family: var(--secondary-font);
+    color: var(--orange);
+    letter-spacing: 2px;
+}
+
+.main-banar-sec>.content>h1{
+    font-family:var(--primary-font);
+    color: var(--green);
+    font-size: 4.5rem;
+}
+
+.main-banar-sec>.content>p{
+    font-family:var(--secondary-font);
+    color: var(--primary-text-color);
+}
+
+.main-banar-sec>.content>a{
+    font-family:var(--primary-font);
+    color: var(--white);
+    background-color: var(--orange);
+    border-color: var(--orange) !important;
+}
+
+.main-banar-sec>.content>a:hover{
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+
+/* features section css*/
+
+.features-sec h2{
+    font-family: var(--primary-font);
+    color: var(--green);
+}
+
+.features-sec p,div,a{
+    font-family: var(--secondary-font);
+    color: var(--primary-text-color);
+}
+
+.features-sec a:hover{
+    text-decoration: underline !important;
+}
+
+
+
+/* our story section css */
+
+.our-story-sec{
+    background-color: var(--light-green);
+}
+
+.our-story-heading>h1,.main-signature-select-sec>h1,.main-aboutus-sec>h1,.main-booking-sec>h1{
+    color: var(--green);
+    font-family: var(--primary-font);
+    font-size: 3rem;
+}
+
+.our-story-heading>p{
+    color: var(--primary-text-color);
+    width: 780px;
+    max-width: 100%;
+    font-family: var(--secondary-font);
+}
+
+.gallery-sec{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 37.5rem;
+    gap: 3rem;
+}
+
+.gallery-sec .img1,.img3{
+    height: 15.625rem;
+    width: 100%;
+}
+
+.gallery-sec .img1{
+    background: url(img/our-story-img1.avif) center;
+    background-size: cover;
+    border-radius: 300px 0 0 300px;
+}
+
+.gallery-sec .img3{
+    background: url(img/our-story-img3.avif) center;
+    background-size: cover;
+    border-radius: 0 300px 300px 0;
+}
+
+.gallery-sec .social-circle{
+    border-radius: 50%;
+    height: 15.625rem;
+    width: 100%;
+    max-width: 15.625rem;
+    align-self: center;
+    background-color: var(--green);
+    
+}
+
+.gallery-sec .social-circle>h2{
+    font-family: var(--primary-font);
+    color: var(--white);
+}
+
+.gallery-sec .social-circle>h3{
+    font-family: var(--primary-font);
+    color: var(--orange);
+}
+
+.gallery-sec .img2{
+    border-radius: 300px;
+    background: url(img/our-story-img2.avif)no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+/* signature selections section css */
+
+
+#food-grid-sec .card {
+    background-color: var(--orange-light);
+    height: 510px;
+}
+
+#food-grid-sec .card>h2{
+    color: var(--green);
+    font-family: var(--primary-font);
+}
+
+#food-grid-sec .card>p{
+    color: var(--primary-text-color);
+    font-family: var(--secondary-font);
+    font-size: 1.1rem;
+    line-height: 24px;
+}
+
+#food-grid-sec .card>.food-price{
+    background-color: var(--green);
+    color: var(--white);
+    font-family: var(--primary-font);
+    width:max-content;
+}
+
+
+/* about us section css */
+
+.aboutus-sec{
+    background-color: var(--light-green);
+}
+
+.about-content>h2{
+    color: var(--green);
+    font-family: var(--primary-font);
+}
+
+.name>span{
+    color: var(--green);
+    font-family: var(--secondary-font);
+}
+
+.name>span:nth-child(2){
+    color: var(--primary-text-color) !important;
+}
+
+
+
+/* more features section css */
+
+.prices>h2,.atmosphere>h2,.products>h2{
+    color: var(--green);
+    font-family: var(--primary-font);
+}
+
+
+/* booking section css */
+
+.booking-sec{
+    background-color: var(--green);
+}
+
+.main-booking-sec>h1{
+    font-family: var(--primary-font);
+    color: var(--white);
+}
+
+.main-booking-sec p, p>a{
+    max-width: 600px;
+    color: var(--secondary-text-color);
+    font-family: var(--secondary-font);
+}
+
+.main-booking-sec>p>a:hover{
+    transition: .3s;
+    color: var(--white);
+    text-decoration: underline !important;
+}
+
+
+.booking-table,.social-icons,.text-sec{
+    max-width: 600px;
+}
+
+input::placeholder,textarea::placeholder{
+    color: rgb(155, 155, 155);
+}
+
+input:focus,textarea:focus{
+    border-color: var(--orange) !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+#submit-btn{
+    color: var(--white);
+    background-color: var(--orange);
+    border-color: var(--orange) !important;
+    font-family: var(--primary-font);
+    transition: .4s;
+}
+
+#submit-btn:hover{
+    color: var(--orange);
+    background-color: var(--white);
+}
+
+.success-msg{
+    background-color: var(--orange);
+    color: var(--primary-text-color);
+    font-family: var(--secondary-font);
+    display: none;
+}
+
+.social-icons>a{
+    background-color: var(--orange);
+    width: 3rem;
+    height: 3rem;
+}
+
+.social-icons>a,.s-icon,.text-sec .text>a{
+    transition: .4s;
+
+}
+
+.social-icons>a:hover{
+    background-color: var(--white);
+}
+
+.social-icons>a:hover .s-icon{
+    color: var(--orange) !important;
+}
+
+.text-sec .text,.text>a{
+    color: var(--secondary-text-color);
+    font-family: var(--secondary-font);
+}
+
+.text-sec .text>a:hover{
+   color: var(--white);
+}
+
+
+/* media query */
+
+@media screen and (max-width:991px) {
+    .main-banar-sec{
+        gap: 4rem !important;
+    }
+
+    .main-banar-sec>.content>h1{
+        font-size: 2.5rem;
+    }
+
+    
+    .features-sec p{
+        width:auto !important;
+    }
+
+    .features-sec,.our-story-sec,.signature-select-sec,.aboutus-sec,.more-features-sec,.booking-sec{
+        padding: 3.5rem 0 !important;
+    }
+
+    #food-grid-sec .card{
+        max-width: 540px;
+        height: fit-content;
+        margin: 0 auto;
+    }
+
+    .flex-sec{
+        gap: 3rem !important;
+    }
+
+    .about-content{
+        max-width: 750px;
+    }
+
+    .prices>h2,.atmosphere>h2,.products>h2{
+        width: max-content !important;
+    }
+
+    .gallery-sec{
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows:15.625rem 37.5rem 15.625rem;
+    }
+
+    .gallery-sec .img1,.img3{
+        max-width: 18.75rem;
+    }
+
+    
+    .gallery-sec .img2{
+        max-width: 25rem;
+        margin: 0 auto;
+    }
+
+    
+
+
+}
+
+@media screen and (max-width:767px) {
+    html{
+        font-size: 14px;
+    }
+
+    #navlogo img{
+        width: 50% !important;
+    }
+
+    #nav{
+        background-color: var(--white) !important;
+    }
+
+    .banar-sec{
+        padding-top: 8rem;
+        padding-bottom: 3rem;
+    
+    }
+
+    .main-banar-sec{
+        gap: 2.5rem !important;
+    }
+
+    .features-sec p{
+        width:300px !important;
+    }
+
+    .circle{
+        width: 4.2rem !important;
+        height: 4.2rem !important;
+    }
+
+    .our-story-heading>h1,.main-signature-select-sec>h1,.main-aboutus-sec>h1,.main-booking-sec>h1{
+        font-size: 2.3rem;
+    }
+
+    #food-grid-sec .card>p{
+        line-height: 22px;
+    }
+
+    .about-content>h2{
+        margin: 2rem 0 !important;
+    }
+
+    input,textarea{
+       font-size: 15px !important; 
+    }
+
+    .gallery-sec{
+        grid-auto-rows:auto 37.5rem auto;
+        gap: 0;
+    }
+
+    .gallery-sec .img1,.img3{
+        align-self: center;
+    }
+
+    .gallery-sec .left,.right{
+       gap: 0 !important;
+    }
+}
+
+@media screen and (max-width:489px) {
+    html{
+        font-size: 12px;
+    }
+
+    .main-banar-sec>.img>img{
+        width: 100%;
+    }
+
+    .features-sec p{
+        width:220px !important;
+    }
+
+    #food-grid-sec .card>img{
+       width: 150px;
+       height: 150px;
+    }
+
+    #food-grid-sec .card{
+       padding: 2rem 1rem !important;
+    }
+
+    #food-grid-sec .card>p{
+       line-height: 21px;
+    }
+
+    .flex-sec{
+        gap: 2rem !important;
+    }
+
+    input,textarea{
+        font-size: 14px !important; 
+     }
+
+     .text-sec>.flex-text{
+        flex-direction: column;
+     }
+
+}
